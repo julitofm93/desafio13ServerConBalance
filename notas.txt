@@ -1,0 +1,21 @@
+pm2:
+pm2 start app.js //fork
+pm2 start app.js -i max //cluster con todos los procesadores
+pm2 delete all
+pm2 stop app.js
+pm2 list
+pm2 monit
+
+
+nginx
+en cmd: 
+C://nginx-1-21-6>start nginx.exe
+
+frenar proceso:
+nginx.exe -s stop
+
+verificar que esta bien configurado:
+nginx.exe -t
+
+No pude resolver el punto de redirigir las consultas de la ruta /random a un puerto diferente.
+El resto de los puntos creo que están correctos al menos en mis pruebas.
